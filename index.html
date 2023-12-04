@@ -1,616 +1,291 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="Hima Lakkaraju" content="">
-    <meta name="Hima Lakkaraju" content="">
-
-    <title>Hima Lakkaraju</title>
-
-    <!-- Nunito Sans font -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap theme -->
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-    <!-- font awesome icons -->
-    <link href="css/icon.css" rel="stylesheet">
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <!-- Overriding personal style -->
-    <link href="css/style.css" rel="stylesheet">   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-  <script type="text/javascript">
-   function visibility_on(id) {
-        var e = document.getElementById(id+"_text");
-        if(e.style.display == 'none')
-            e.style.display = 'block';
-        var e = document.getElementById(id+"_img");
-        if(e.style.display == 'none')
-            e.style.display = 'block';
-   }
-   function visibility_off(id) {
-        var e = document.getElementById(id+"_text");
-        if(e.style.display == 'block')
-            e.style.display = 'none';
-        var e = document.getElementById(id+"_img");
-        if(e.style.display == 'block')
-            e.style.display = 'none';
-   }
-   function toggle_visibility(id) {
-       var e = document.getElementById(id+"_text");
-       if(e.style.display == 'inline')
-          e.style.display = 'block';
-       else
-          e.style.display = 'inline';
-       var e = document.getElementById(id+"_img");
-       if(e.style.display == 'inline')
-          e.style.display = 'block';
-       else
-          e.style.display = 'inline';
-   }
-   function toggle_vis(id) {
-       var e = document.getElementById(id);
-       if (e.style.display == 'none')
-           e.style.display = 'inline';
-       else
-           e.style.display = 'none';
-   }
-</script>
-  
-  </head>
-
-  <body>
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Hima Lakkaraju</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#news">News</a></li>	    
-            <li><a href="#research">Research</a></li>
-	    <li><a href="#students">Advising</a></li>
-            <li><a href="#teaching">Teaching</a></li>
-            <!--<li><a href="#papers">Service</a></li>-->
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-
-    <div class="container theme-showcase" role="main">
-      <div class="row">
-	<div class="col-md-3">
-	  <h3>Hima Lakkaraju</h3>
-	  <img class="img-thumbnail" src="images/hima-2019.jpg" alt="" style="width:70%"/>
-	  <br /><br />
-	  <h4>Contact</h4>
-	<font size="3"><a href="mailto:hlakkaraju@hbs.edu" class="icon fa-envelope"></a> hlakkaraju@hbs.edu<br />
-	<font size="3"><a href="mailto:hlakkaraju@seas.harvard.edu" class="icon fa-envelope"></a> hlakkaraju@seas.harvard.edu<br />
-	<br>
-	<a href="https://www.google.com/maps/place/Morgan+Hall,+15+Harvard+Way,+Boston,+MA+02163/@42.3656487,-71.1235283,13z/data=!4m5!3m4!1s0x89e37760e1889289:0x9bdcdfeb1d014231!8m2!3d42.3667941!4d-71.123931" class="icon fa-building"></a> 428 Morgan Hall<br />
-	<a href="https://www.google.com/maps/place/Maxwell-Dworkin,+33+Oxford+St,+Cambridge,+MA+02138/data=!4m2!3m1!1s0x89e37741136f99f3:0xdee244d8cde0c0dc?sa=X&ved=2ahUKEwj5m4CM8OfkAhVyZN8KHZt5AooQ8gEwAHoECAwQAQ" class="icon fa-building"></a> 337 Maxwell Dworkin<br />
-	<br>
-	<a href="https://twitter.com/hima_lakkaraju" class="icon fa-twitter"></a> @hima_lakkaraju<br />
-	<a href="https://github.com/lvhimabindu" class="icon fa-github"></a> lvhimabindu<br />	  </font>
-	</div>
-	
-	<div class="col-md-9">
-	  <br /><br />
-	  <h3></h3>
-	  <font size="3">
-
-<p>I am an <font color="#cc0000">Assistant Professor at Harvard University</font> with appointments in Business School and Department of Computer Science. </p> 
-<blockquote style=" padding: 10px; background-color: #eeeeee;"><font size="3">
-         <p>My research interests lie within the broad area of <font color="#cc0000">trustworthy machine learning</font>. More specifically, my research spans <font color="#cc0000">explainable</font>, <font color="#cc0000">fair</font>,  and <font color="#cc0000">robust</font> ML. I am also very interested in <font color="#cc0000">reinforcement learning</font> and <font color="#cc0000">causal inference</font>.  
-		 <p>I develop machine learning tools and techniques which enable human decision makers to make better decisions. More specifically, my research addresses the following fundamental questions pertaining to human and algorithmic decision-making:
-	</p>
-	<ol>
-<li> How to build fair and interpretable models that can aid human decision-making?
-<li> How to ensure that models and their explanations are robust to adversarial attacks? 
-<li> How to train and evaluate models in the presence of missing counterfactuals?
-<li> How to detect and correct underlying biases in human decisions and algorithmic predictions? 
-</ol>
-<p>These questions have far-reaching implications in domains involving high-stakes decisions such as criminal justice, health care, public policy, business, and education. 
-<!--My research tackles the above questions by effectively handling the core underlying challenges such as missing counterfactuals and presence of unmeasured confounders.--> 
-</p>
-
-	
-	</font>
-	
-</blockquote>
-		  <p> I lead the <font color="#cc0000">AI4LIFE</font> research group at Harvard and I recently co-founded the <a href="https://www.trustworthyml.org/">Trustworthy ML Initiative (TrustML)</a> to help lower entry barriers into trustworthy ML and bring together researchers and practitioners working in the field. 
-		  </p>
-<p>
-	My current research is being generously supported by <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2008461&HistoricalAwards=false">NSF</a>, <a href="https://research.google/outreach/">Google</a>, <a href="https://datascience.harvard.edu/">Harvard Data Science Initiative</a>, and <a href="https://www.bayer.com/en/">Bayer</a>. Prior to my stint at Harvard, I received my PhD in Computer Science from Stanford University.
-	<!--, during which I collaborated with  <a href="https://cs.stanford.edu/people/jure/">Prof. Jure Leskovec</a>, <a href="http://web.mit.edu/rudin/www/home.html">Prof. Cynthia Rudin</a>, <a href="http://www.cs.cornell.edu/home/kleinber/">Prof. Jon Kleinberg</a>, <a href="http://scholar.harvard.edu/sendhil/home/">Prof. Sendhil Mullainathan</a>, and <a href="http://research.microsoft.com/en-us/um/people/horvitz/">Dr. Eric Horvitz</a>.--> 
-	<!--My PhD research was generously supported by a <a href="https://vpge.stanford.edu/fellowships-funding/sgf">Stanford Graduate Fellowship</a>, a <a href="https://www.microsoft.com/en-us/research/academic-program/dissertation-grant/">Microsoft Research Dissertation Grant</a>, and a <a href="https://www.womentechmakers.com/scholars">Google Anita Borg Scholarship</a>.
-	-->
-</p>
-<p>
-For more details about me and my research, here is my <a href="./Hima_Lakkaraju_CV.pdf">CV</a> and here is a <a href="./one-pager.pdf">one-pager</a> about my research.
-</p>
-<p>
-<font color="#cc0000">NOTE:</font> I am looking for motivated <font color="#cc0000">undergraduate and graduate students as well as postdocs</font> who are broadly interested in trustworthy machine learning and its applications to health care and criminal justice. 
-	If you are excited about this line of research and would like to work with me, please <a href="javascript:toggle_vis('contact')">read this</a> before contacting me. 
-</p>		  <div id="contact" style="display:none"> 
-		  <blockquote style=" padding: 10px; background-color: #EEEEEE;"><font size="3">
-                  <p>Thank you for your interest in joining my lab! I am currently recruiting undergraduate, masters, and PhD students as well as postdoctoral fellows. </p>
-		  <p>If you are interested in a <i>postdoc</i> position, please send me an email with your CV and a brief description of your research interests. Please use the subject line <font color="#cc0000">"Postdoctoral Fellowship Application"</font> in your email. </p> 
-		  <p>If you are a <i>current or admitted undergraduate or masters or PhD student at Harvard</i>, please send me an email with your CV and a brief description of your research interests. Please use the subject line <font color="#cc0000">"Interested in Collaboration (Harvard Student)"</font> in your email. 
-	  	  </p>
-		  If you are <i>not (yet!) a student at Harvard and would like to pursue a PhD under my guidance</i>, <font color="#cc0000">please apply to BOTH the following PhD programs and mention my name in your statements and applications</font>: 
-		  <ol>
-			  <li> <a href="https://gsas.harvard.edu/programs-of-study/all/business-administration">PhD Program in Technology and Operations Management</a> at Harvard Business School. 
-			  </li>
-			  <li> <a href="https://www.seas.harvard.edu/computer-science/graduate-programs/how-apply">PhD Program in Computer Science</a> at Harvard SEAS.
-			  </li>	  
-		  </ol>
-		  <p> I have few internship positions available for students who are already doing their PhD in the United States. If this is of interest, please send me an email with your CV and a brief description of your research interests. Please use the subject line <font color="#cc0000">"Internship Position (PhD Student)"</font> in your email. 
-			  </p> 
-		  <p>
-		  Unfortunately, I will not be able to respond to any individual emails about admissions to masters or PhD programs. 
-	 	  </p>
-		  <!--<p> I am also open to research collaborations with students and faculty both within Harvard and elsewhere. If you are interested in collaborating with me and my group, please send me an email with a brief description of your research interests and background. Please do not forget to include a link to your webpage and/or your CV. </p>
-	        -->  
-		</blockquote>
-	          </div>
-		  </font>
-
-	  
-	</div>
-	<font size="3">
-      </div>
-
-      <div class="page-header" id="news"><h3>News</h3></div>
-      <div class="row">
-        <div class="col-md-12">
-          <ul>
-	  <li> We officially launched the <a href="https://www.trustworthyml.org/">Trustworthy ML Initiative (TrustML)</a> to enable easy access to resources on trustworthy ML and to build a community of researchers and practitioners working on the topic.
-		  </li>
-	  <li> I will be presenting a tutorial on <a href="https://medium.com/@NeurIPSConf/tutorial-selections-for-neruips-2020-33b79f4915c4">Explaining Machine Learning Predictions: State-of-the-art, Challenges, and Opportunities</a> at <a href="https://nips.cc/">NeurIPS 2020</a>.
-		  </li>
-          <li> I am teaching a graduate course on <a href="https://www.hbs.edu/faculty/units/tom/Pages/curriculum.aspx">Technology and Operations Management</a> during fall 2020. 
-      	  <li>I <font color="#cc0000">taught a graduate course</font> on <a href="https://interpretable-ml-class.github.io/">Interpretable Machine Learning</a> during fall 2019. 
-          </li>
-	 <li>I <font color="#cc0000">taught a graduate course</font> on <a href="https://hbs.instructure.com/courses/6256">Introduction to Machine Learning for Social Scientists</a> during spring 2020. </li>
-		  <li>Excited to be named one of the <font color="#cc0000">innovators to watch</font> by <a href="https://www.vanityfair.com/">Vanity Fair</a>. <a href="https://www.vanityfair.com/news/2019/10/future-innovators-index-2019">Here</a> is the article.
-          <li> Incredibly honored and humbled to be named one of the <font color="#cc0000">35 innovators under 35</font> by <a href="https://www.technologyreview.com/lists/innovators-under-35/2019/">MIT Tech Review</a>. <a href="https://www.technologyreview.com/lists/innovators-under-35/2019/humanitarian/himabindu-lakkaraju/">Here</a> is the article featuring my work.   
-          </li>
-          <li>
-                Organizing a session on <heavy>Trustworthy Machine Learning</heavy> at <a href="http://meetings2.informs.org/wordpress/nationalharbor2020/">INFORMS Annual Meeting</a> 2020.
-          </li>
-          <li>
-               Serving as an Area Chair for <a href="https://icml.cc/Conferences/2020">ICML</a> and <a href="https://nips.cc/Conferences/2020/">NeurIPS</a> 2020
-          </li>
-          <!--<li>
-                Co-organized a workshop on <heavy>Debugging Machine Learning Models</heavy> at <a href="https://iclr.cc/">ICLR</a> 2019. More details at: <a href="https://debug-ml-iclr2019.github.io/">https://debug-ml-iclr2019.github.io/</a>
-          </li>-->
-          <!--<li>
-                I am serving as a PC member for <a href="http://auai.org/uai2019/">UAI</a>, <a href="https://ijcai19.org/">IJCAI</a>, <a href="https://www.kdd.org/kdd2019/">KDD</a>, <a href="https://iclr.cc/">ICLR</a>, <a href="https://www.aistats.org/">AISTATS</a>, <a href="https://aaai.org/Conferences/AAAI-19/">AAAI</a>, <a href="http://www.wsdm-conference.org/2019/">WSDM</a> 2019
-          </li>-->
-          </ul>
-        </div>
-      </div>
- 
-      <div class="page-header" id="news"><h3>Upcoming and Recent Talks</h3></div>
-      <div class="row">
-        <div class="col-md-12">
-          <ul>
-		  <li> 
-			  <date>02.2021</date> <a href="https://www.cl.cam.ac.uk/research/ai/meetings/">University of Cambridge</a> 
-		  </li>
-		  <li> 
-			  <date>02.2021</date> <a href="https://groups.cs.umass.edu/voicesofds/">Voices of Data Science, UMass Amherst</a> 
-		  </li>
-		  <li> 
-			  <date>01.2021</date> <a href="https://www.cis.mpg.de/events/">Max Planck Symposium on Computing and Society</a> 
-		  </li>
-          <li>
-		  <date>12.2020</date> <a href="https://www.cs.cmu.edu/~nihars/teaching/10715-Fa20/index.html">Advanced Machine Learning</a> and <a href="https://haiicmu.github.io/calendar/">Human-AI Interaction</a> Courses at Carnegie Mellon University 
-		  
-	  </li>
-	  <li>  <!-- INFORMS -->
-            <date>11.2020.</date>
-            3 Invited talks at <a href="https://www.abstractsonline.com/pp8/#!/9022/sessions/lakkaraju/1/">INFORMS</a>
-          </li>
-	  <li>
-		  <date>10.2020.</date>
-		  Invited talk at the <a href="https://innovate.mygov.in/vaibhav-summit/">Vaibhav Summit</a> being organized by the Government of India
-	  </li>
-	  <li>  <!-- MICCAI -->
-            <date>10.2020.</date>
-            Keynote at <a href="https://imimic-workshop.com/">MICCAI Workshop on Interpretability of Machine Intelligence</a>
-          </li>
-	  <li>  <!-- MICCAI -->
-            <date>09.2020.</date>
-            Invited talk at <a href="https://www.fiddler.ai/">fiddler.ai</a>
-          </li>
-	  <li>  <!-- TWIML -->
-            <date>08.2020.</date>
-            Model Explainability Forum hosted by <a href="https://twimlai.com/2020-model-explainability-forum/">TWIML AI Podcast</a> 
-          </li>
-	  <li>  <!-- TWIML -->
-            <date>06.2020.</date>
-            Interview with <a href="https://twimlai.com/twiml-talk-387-ai-for-high-stakes-decision-making-with-hima-lakkaraju/">TWIML AI Podcast</a>
-          </li>
-	   <li>
-		  <!-- BITS -->
-            <date>06.2020.</date>
-            Invited talk at <a href="https://www.youtube.com/watch?v=nDJWbpXf2M0&t=6s">Society for AI and Deep Learning</a>, BITS Pilani
-          </li>
-            <li>
-            <date>06.2020.</date>
-            Keynote at <a href="https://fadetrcv.github.io/">CVPR Workshop on Fair, Data-Efficient and Trusted Computer Vision</a>
-          </li>
-          <li>
-            <date>06.2020.</date>
-            Keynote at <a href="https://lawecon.ethz.ch/">ETH Zurich - Center for Law & Economics </a>
-          </li>
-		  <!--
-	  <li>
-            <date>12.2019.</date>
-            <a href="https://www.si.umich.edu/">University of Michigan - School of Information</a>
-          </li>
-	  <li>
-            <date>11.2019.</date>
-            <a href="https://crcs.seas.harvard.edu/event/hima-lakaraju">Harvard CRCS Seminar</a>
-          </li>
-          <li>
-            <date>10.2019.</date>
-            <a href="http://meetings2.informs.org/wordpress/seattle2019/">INFORMS Annual Meeting</a>
-          </li>
-          <li>
-            <date>10.2019.</date>
-            <a href="https://aiworld.com/">AI World Conference & Expo</a>
-	  </li>
-          <li>
-            <date>09.2019.</date>
-            <a href="https://events.technologyreview.com/emtech/19/">EmTech MIT Conference</a>
-	  </li>
-	  <li>
-            <date>09.2019.</date>
-            <a href="https://deepmind.com/">Google DeepMind Annual Summit</a>
-	  </li>
-          <li>
-            <date>07.2019.</date>
-            <a href="https://www.meetup.com/Boston-Women-in-Machine-Learning-and-Data-Science/events/262613371/">WiMLDS Boston</a>
-          </li>
-	  <li> 
-            <date>05.2019.</date>
-            <a href="https://sites.google.com/view/safeml-iclr2019/home">ICLR Workshop on Safe Machine Learning</a>
-          </li>--> 
-          </ul>
-        </div>
-      </div>
-      </font>
-
-      <div class="page-header" id="research"><h3>Research</h3></div>
-
-      <h4>Publications</h4>    
-      <font size="3">
-      <ul>
-	      <li> 
-		      <p> Fair influence maximization: A welfare optimization approach. <br />
-			      Aida Rahmattalabi, Shahin Jabbari, Himabindu Lakkaraju, Phebe Vayanos, Eric Rice, Milind Tambe <br />
-			      <i></i> AAAI International Conference on Artificial Intelligence (AAAI), 2021.<br />
-			      <a href="https://arxiv.org/pdf/2006.07906.pdf">pdf</a>
-		      </p>
-	      </li>
-	  <li>
-              <p> Interactive Summaries of Actionable Recourses: Uncovering Biases and Disparities in Recourse <br />
-                  Kaivalya Rawal and Himabindu Lakkaraju. <br />
-      <i></i>Advances in Neural Information Processing Systems (NeurIPS), 2020.<br />
-                  <a href="https://arxiv.org/abs/2009.07165" class="btn btn-xs btn-default">pdf</a>
-              </p>
-          </li>
-	  <li>
-              <p> Incorporating Interpretable Output Constraints in Bayesian Neural Networks <br />
-                  Wanqian Yang, Lars Lorch, Moritz Gaule, Himabindu Lakkaraju, Finale Doshi-Velez. <br />
-      <i></i>Advances in Neural Information Processing Systems (NeurIPS), 2020.<br />
-                  <a href="https://arxiv.org/pdf/2010.10969.pdf" class="btn btn-xs btn-default">pdf</a>
-              </p>
-          </li>
-          <li>
-              <p> Robust and Stable Black Box Explanations. <br />
-                  Himabindu Lakkaraju, Nino Arsov, Osbert Bastani. <br />
-      <i></i>International Conference on Machine Learning (ICML), 2020.<br />
-                  <a href="https://proceedings.icml.cc/static/paper_files/icml/2020/5945-Paper.pdf" class="btn btn-xs btn-default">pdf</a>
-              </p>
-          </li>
-          <li>
-              <p> Fooling LIME and SHAP: Adversarial Attacks on Post hoc Explanation Methods. <br />
-                  Dylan Slack, Sophie Hilgard, Emily Jia, Sameer Singh, Himabindu Lakkaraju. <br />
-		  <i></i>AAAI/ACM Conference on Artificial Intelligence, Ethics, and Society (AIES), 2020.<br />
-                  <a href="https://arxiv.org/pdf/1911.02508.pdf" class="btn btn-xs btn-default">pdf</a> <br />
-		  Press: <a href="https://blog.deeplearning.ai/blog/the-batch-sony-goes-ai-intels-gpu-killers-transformer-networks-in-disguise-malicious-models-fool-bias-detection">deeplearning.ai</a> | 
-		      <a href="https://hbr.org/2019/12/the-ai-transparency-paradox">Harvard Business Review</a>
-              </p>
-          </li>
-	  <li>
-              <p> "How do I fool you?": Manipulating User Trust via Misleading Black Box Explanations. <br />
-                  Himabindu Lakkaraju, Osbert Bastani. <br />
-		  <i></i>AAAI/ACM Conference on Artificial Intelligence, Ethics, and Society (AIES), 2020.<br />
-                  <a href="https://arxiv.org/pdf/1911.06473.pdf" class="btn btn-xs btn-default">pdf</a>
-	      </p>  
-          </li>
-        <li>
-        <p>Faithful and Customizable Explanations of Black Box Models.<br />
-           Himabindu Lakkaraju, Ece Kamar, Rich Carauna, Jure Leskovec.<br />
-           <i></i>AAAI/ACM Conference on Artificial Intelligence, Ethics, and Society (AIES), 2019.<br />
-           <a href="./customizable.pdf" class="btn btn-xs btn-default">pdf</a>
-        </p>
-        </li>
-	<li><p>Human Decisions and Machine Predictions.<br />
-	    Jon Kleinberg, Himabindu Lakkaraju, Jure Leskovec, Jens Ludwig, Sendhil Mullainathan.<br />
-	    <i>Quarterly Journal of Economics (QJE)</i>, 2018.<br />	
-	    <heavy>Featured in MIT Technology Review, Harvard Business Review, The New York Times,</heavy><br />   
-	    <heavy>and as Research Spotlight on National Bureau of Economics front page</heavy>.<br />   
-	    <a href="https://academic.oup.com/qje/article/doi/10.1093/qje/qjx032/4095198/Human-Decisions-and-Machine-Predictions#" class="btn btn-xs btn-default">pdf</a>  
-	</p></li>
-	
-        <li><p>The Selective Labels Problem: Evaluating Algorithmic Predictions in the Presence of Unobservables.<br />
-	    Himabindu Lakkaraju, Jon Kleinberg, Jure Leskovec, Jens Ludwig, Sendhil Mullainathan. <br />
-	    <i>ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)</i>, 2017. <br/>
-	    <a href="http://cs.stanford.edu/~jure/pubs/contraction-kdd17.pdf" class="btn btn-xs btn-default">pdf</a>
-	</p></li>
-
-        <li><p>Learning Cost-Effective and Interpretable Treatment Regimes.<br />
-            Himabindu Lakkaraju, Cynthia Rudin.<br />
-	    <i>International Conference on Artificial Intelligence and Statistics (AISTATS)</i>, 2017.<br />
-	    <heavy>INFORMS Data Mining Best Paper Award - Finalist</heavy>.<br /> 
-	    <heavy>Invited Talk at INFORMS Annual Meeting</heavy>.<br />   
-            <a href="https://arxiv.org/abs/1610.06972" class="btn btn-xs btn-default">pdf</a>
-            
-        </p></li>
-	
-        <li><p>Identifying Unknown Unknowns in the Open World: Representations and Policies for Guided Exploration.<br />
-            Himabindu Lakkaraju, Ece Kamar, Rich Caruana, Eric Horvitz.<br />
-            <i>AAAI Conference on Artificial Intelligence (AAAI)</i>, 2017.<br />
-            <heavy>Featured in Bloomberg Technology</heavy>.<br />
-            <a href="https://arxiv.org/abs/1610.09064" class="btn btn-xs btn-default">pdf</a>
-            
-        </p></li>
-	
-        <li><p> Interpretable and Explorable Approximations of Black Box Models.<br />
-            Himabindu Lakkaraju, Ece Kamar, Rich Caruana, Jure Leskovec.<br />
-            <i>KDD Workshop on Fairness, Accountability, and Transparency in Machine Learning (FAT ML)</i>, 2017.<br />
-            <heavy>Invited Talk at INFORMS Annual Meeting</heavy>.<br />   
-            <a href="https://arxiv.org/abs/1707.01154" class="btn btn-xs btn-default">pdf</a>
-        </p></li>
-        
-        <li><p>Confusions over Time: An Interpretable Bayesian Model to Characterize Trends in Decision Making.<br />
-            Himabindu Lakkaraju, Jure Leskovec.<br />
-            <i>Advances in Neural Information Processing Systems (NIPS)</i>, 2016. <br/>
-            <a href="https://snap.stanford.edu/hima/paper-temporal-confusions.pdf" class="btn btn-xs btn-default">pdf</a>
-        </p></li>
-        
-        <li><p>Interpretable Decision Sets: A Joint Framework for Description and Prediction.<br />
-            Himabindu Lakkaraju, Stephen H. Bach, Jure Leskovec. <br />
-            <i>ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)</i>, 2016. <br/>
-            <heavy>Invited Talk at INFORMS Annual Meeting</heavy>.<br />   
-            <a href="https://cs.stanford.edu/people/jure/pubs/interpretable-kdd16.pdf" class="btn btn-xs btn-default">pdf</a>	  
-        </p></li>
-        
-        <li><p> Mining Big Data to Extract Patterns and Predict Real-Life Outcomes. <br />
-            Michal Kosinki, Yilun Wang, Himabindu Lakkaraju, Jure Leskovec.<br />
-            <i>Psychological Methods</i>, 2016.<br />
-            <a href="http://mypersonality.org/wiki/lib/exe/fetch.php?media=psychological_methods.pdf" class="btn btn-xs btn-default">pdf</a>  
-        </p></li>
-        
-        <li><p>Learning Cost-Effective and Interpretable Regimes for Treatment Recommendation.<br />
-            Himabindu Lakkaraju, Cynthia Rudin.<br />
-            <i>NIPS Workshop on Interpretable Machine Learning in Complex Systems</i>, 2016.<br />
-            <a href="https://arxiv.org/pdf/1611.07663.pdf" class="btn btn-xs btn-default">pdf</a>
-        </p></li>
-        
-        <li><p>Learning Cost-Effective and Interpretable Treatment Regimes for Judicial Bail Decisions. <br />
-	    Himabindu Lakkaraju, Cynthia Rudin. <br />
-	    <i>NIPS Symposium on Machine Learning and the Law</i>, 2016.<br />
-	    <a href="http://www.mlandthelaw.org/papers/lakkaraju.pdf" class="btn btn-xs btn-default">pdf</a>	  
-	</p></li>
-
-	<li><p>Discovering Unknown Unknowns of Predictive Models.<br />
-	    Himabindu Lakkaraju, Ece Kamar, Rich Caruana, Eric Horvitz.<br />
-	    <i>NIPS Workshop on Reliable Machine Learning in the Wild</i>, 2016.<br />
-	    <a href="http://web.stanford.edu/~himalv/unknownunknownsws.pdf" class="btn btn-xs btn-default">pdf</a>
-	</p></li>
-
-	<li><p>A Machine Learning Framework to Identify Students at Risk of Adverse Academic Outcomes. <br />
-	    Himabindu Lakkaraju, Everaldo Aguiar, Carl Shan, David Miller, Nasir Bhanpuri, Rayid Ghani. <br />
-	    <i>ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)</i>, 2015.<br />
-	    <a href="http://dssg.uchicago.edu/papers/montgomery_education.pdf" class="btn btn-xs btn-default">pdf</a>	
-	</p></li>
-
-	<li><p>A Bayesian Framework for Modeling Human Evaluations. <br />
-	    Himabindu Lakkaraju, Jure Leskovec, Jon Kleinberg, Sendhil Mullainathan. <br />
-	    <i>SIAM International Conference on Data Mining (SDM) </i>, 2015.<br />
-	    <a href="http://cs.stanford.edu/people/jure/pubs/evaluations-sdm15.pdf" class="btn btn-xs btn-default">pdf</a>  
-	</p></li>
-
-	<li><p>Who, When, and Why: A Machine Learning Approach to Prioritizing Students at Risk of not Graduating High School on Time.<br />
-	    Everaldo Aguiar, Himabindu Lakkaraju, Nasir Bhanpuri, David Miller, Ben Yuhas, Kecia Addison, Rayid Ghani.
-<br />
-	    <i>Learning Analytics and Knowledge Conference (LAK)</i>, 2015.<br />
-	    <a href="http://dl.acm.org/citation.cfm?id=2723619" class="btn btn-xs btn-default">pdf</a>
-	</p></li>
-
-	<li><p>Aspect Specific Sentiment Analysis using Hierarchical Deep Learning.<br />
-	    Himabindu Lakkaraju, Richard Socher, Chris Manning.<br />
-	    <i>NIPS Workshop on Deep Learning and Representation Learning</i>, 2014.<br />
-	    <a href="http://www.dlworkshop.org/58.pdf?attredirects=0" class="btn btn-xs btn-default">pdf</a>  	  
-	</p></li>
-
-	<li><p>Using Big Data to Improve Social Policy.<br />
-	    Jon Kleinberg, Himabindu Lakkaraju, Jure Leskovec, Jens Ludwig, Sendhil Mullainathan.<br />
-	    <i>NBER Economics of Crime Working Group</i>, 2014.<br />
-	    <a href="https://academic.oup.com/qje/article/doi/10.1093/qje/qjx032/4095198/Human-Decisions-and-Machine-Predictions#" class="btn btn-xs btn-default">pdf</a>  	  
-	</p></li>
-
-	<li><p>What's in a name ? Understanding the Interplay Between Titles, Content, and Communities in Social Media.<br />
-	    Himabindu Lakkaraju, Julian McAuley, Jure Leskovec. <br />
-	    <i>International AAAI Conference on Weblogs and Social Media (ICWSM)</i>, 2013.<br />
-	    <heavy>Featured in Time, Forbes, Phys.Org, Business Insider</heavy>.<br />
-	    <a href="https://sites.google.com/site/himabindulv/papers/ICWSM2013.pdf?attredirects=0" class="btn btn-xs btn-default">pdf</a>  	  
-	</p></li>
-
-	<li><p>Dynamic Multi-Relational Chinese Restaurant Process for Analyzing Influences on Users in Social Media.<br />
-	    Himabindu Lakkaraju, Indrajit Bhattacharya, Chiranjib Bhattacharyya.<br />
-	    <i>IEEE International Conference on Data Mining (ICDM)</i>, 2012.<br />
-	    <a href="http://arxiv.org/abs/1205.1456" class="btn btn-xs btn-default">pdf</a>  	  
-	</p></li>
-	<li><p>TEM: a novel perspective to modeling content on microblogs.<br />
-	    Himabindu Lakkaraju, Hyung-Il Ahn.<br />
-	    <i>International World Wide Web Conference (WWW), short paper</i>, 2012.<br />
-	    <a href="http://www2012.wwwconference.org/proceedings/companion/p553.pdf" class="btn btn-xs btn-default">pdf</a>  	  
-	</p></li>
-	<li><p>Exploiting Coherence for the Simultaneous Discovery of Latent Facets and associated Sentiments.<br />
-	    Himabindu Lakkaraju, Chiranjib Bhattacharyya, Indrajit Bhattacharya, Srujana Merugu.<br />
-	    <i>SIAM International Conference on Data Mining (SDM)</i>, 2011.<br />
-	    <heavy>Best Paper Award</heavy>.<br />
-	    <a href="https://sites.google.com/site/himabindulv/papers/324.pdf?attredirects=0" class="btn btn-xs btn-default">pdf</a>  	  
-	</p></li>
-	<li><p>Attention prediction on social media brand pages.<br />
-	    Himabindu Lakkaraju, Jitendra Ajmera.<br />
-	    <i>ACM Conference on Information and Knowledge Management (CIKM)</i>, 2011.<br />
-	    <a href="https://sites.google.com/site/himabindulv/papers/cikm0226-lakkaraju.pdf?attredirects=0" class="btn btn-xs btn-default">pdf</a>  	  
-	</p></li>
-	<li><p>Smart news feeds for social networks using scalable joint latent factor models.<br />
-	    Himabindu Lakkaraju, Angshu Rai, Srujana Merugu.<br />
-	    <i>International World Wide Web Conference (WWW), short paper</i>, 2011.<br />
-	    <a href="https://sites.google.com/site/himabindulv/papers/smartnewsfeeds1.pdf?attredirects=0" class="btn btn-xs btn-default">pdf</a>  	  
-	</p></li>
-	<li><p>A Non Parametric Theme Event Topic Model for Characterizing Microblogs.<br />
-	    Himabindu Lakkaraju, Hyung-Il Ahn. <br />
-	    <i>NIPS Workshop on Computational Social Science and the Wisdom of Crowds</i>, 2011.<br />
-	    <a href="https://sites.google.com/site/himabindulv/papers/themeevent-final.pdf?attredirects=0" class="btn btn-xs btn-default">pdf</a>  	  
-	</p></li>
-	<li><p>Unified Modeling of User Activities on Social Networking Sites.<br />
-	    Himabindu Lakkaraju, Angshu Rai. <br />
-	    <i>NIPS Workshop on Computational Social Science and the Wisdom of Crowds</i>, 2011.<br />
-	    <a href="https://sites.google.com/site/himabindulv/papers/unifiedmodeling-final.pdf?attredirects=0" class="btn btn-xs btn-default">pdf</a>  	  
-	</p></li>
-      </ul>
-      </font>
-
-      <h4>Patents</h4>
-      <font size="3">
-      <ul>
-	<li><p>Extraction and Grouping of Feature Words.<br />
-	    Himabindu Lakkaraju, Chiranjib Bhattacharyya, Sunil Aravindam, Kaushik Nath.<br />
-	    US8484228<br />
-	</p></li>
-	<li><p>Enhancing knowledge bases using rich social media.<br />
-	    Jitendra Ajmera, Shantanu Ravindra Godbole, Himabindu Lakkaraju, Bernard Andrew Roden, Ashish Verma. <br />
-	    US20130224714<br />
-	</p></li>
-      </ul>	 
-      </font>
+	<head>	
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Seon Kwon Kim" content="">
+		<meta name="Seon Kwon Kim" content="">
 		
-    <div class="page-header" id="students"><h3>Advising</h3></div>
-		<p>I am very fortunate to be collaborating with the following students:</p>
-		<ul>
-			<li>Shahin Jabbari (Postdoc, Harvard CS)</li>
-			<li>Sophie Hilgard (PhD Student, Harvard CS) </li>
-			<li>Dylan Slack (PhD Student, UCI CS) </li>
-			<li>Julius Adebayo (PhD Student, MIT EECS) </li>
-			<li>Aida Rahmttalabi (PhD Student, USC CS) </li>
-			<li>Nino Arsov (Researcher, Macedonian Academy of Arts and Sciences) </li>
-			<li>Aditya Karan (Masters Student, Harvard CS)</li>
-			<li>Kaivalya Rawal (Masters Student, Harvard Data Science)</li>
-			<li>Jorma Gorns (Masters Student, Harvard CS)</li>
-			<li>Emily Jia (Undergraduate, Harvard CS)</li>
-			<li>Alexis Ross (Undergraduate, Harvard CS + Philosophy)</li>
-			<li>Wanqian Yang (Undergraduate, Harvard CS)</li>
-			
-		</ul>
+		<title>Seon Kwon Kim</title>
+		<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="css/icon.css" rel="stylesheet">
+		<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">   
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+		<script type="text/javascript">
+		function visibility_on(id) {
+			var e = document.getElementById(id+"_text");
+			if(e.style.display == 'none')
+			e.style.display = 'block';
+			var e = document.getElementById(id+"_img");
+			if(e.style.display == 'none')
+			e.style.display = 'block';
+		}
+		function visibility_off(id) {
+			var e = document.getElementById(id+"_text");
+			if(e.style.display == 'block')
+			e.style.display = 'none';
+			var e = document.getElementById(id+"_img");
+			if(e.style.display == 'block')
+			e.style.display = 'none';
+		}
+		function toggle_visibility(id) {
+			var e = document.getElementById(id+"_text");
+			if(e.style.display == 'inline')
+			e.style.display = 'block';
+			else
+			e.style.display = 'inline';
+			var e = document.getElementById(id+"_img");
+			if(e.style.display == 'inline')
+			e.style.display = 'block';
+			else
+			e.style.display = 'inline';
+		}
+		function toggle_vis(id) {
+			var e = document.getElementById(id);
+			if (e.style.display == 'none')
+			e.style.display = 'inline';
+			else
+			e.style.display = 'none';
+		}
+		</script>
+	</head>
 
-    <div class="page-header" id="teaching"><h3>Teaching</h3></div>
-     <font size="3">
-	     
-      <ul>
-	<li><p> <a href="https://hbs.instructure.com/courses/7791">Introduction to Technology and Operations Management</a><br/>
-	        Instructor <br />
-		<i>Harvard University</i>, 2020.<br />
-	</p></li>
-	<li><p> <a href="https://hbs.instructure.com/courses/6256">Introduction to Machine Learning for Social Scientists</a><br/>
-	        Instructor <br />
-		<i>Harvard University</i>, 2020.<br />
-	</p></li>
-	<li><p> <a href="https://canvas.harvard.edu/courses/68154">Topics in Machine Learning: Interpretability and Explainability</a><br/>
-	        Instructor <br />
-		<i>Harvard University</i>, 2019.<br />
-	</p></li>
-	<li><p>Introduction to Data Science<br />
-	    Guest Lecture<br />
-	    <i>Stanford Law School</i>, 2016.<br />	 
-	</p></li>
-	<li><p>Probability with Mathemagic<br />
-	    Co-Instructor<br />
-	    <i>Stanford Splash Initiative for High School Students</i>, 2016.<br />	 
-	</p></li>
-	<li><p>Mining Massive Datasets Course<br />
-	    Teaching Assistant<br />
-	    <i>Stanford Computer Science</i>, 2016.<br />	 
-	</p></li>
-	<li><p>Submodular Optimization<br />
-	    Guest Lecture<br />
-	    <i>Mining Massive Datasets Course, Stanford</i>, 2016.<br />	 
-	</p></li>
-	<li><p>Introduction to Python Programming<br />
-	    Co-Instructor<br />
-	    <i>Stanford Girls Teaching Girls to Code Initiative for High School Students</i>, 2015.<br />	 
-	</p></li>
-	<li><p>Mathematics and Science<br />
-	    Tutor<br />
-	    <i>Dreamcatchers Non-Profit Organization, Palo Alto</i>, 2015.<br />	 
-	</p></li>
-	<li><p>Social and Information Network Analysis Course<br />
-	    Head Teaching Assistant<br />
-	    <i>Stanford Computer Science</i>, 2014.<br />	 
-	</p></li>
-	<li><p>Machine Learning Course<br />
-	    Teaching Assistant<br />
-	    <i>Indian Institute of Science</i>, 2010.<br />	 
-	</p></li>
-	<li><p>English and Mathematics<br />
-	    Tutor<br />
-	    <i>UNICEF's Teach India Initiative</i>, 2008 - 2010.<br />	 
-	</p></li>
-	<li><p>Object Oriented Programming<br />
-	    Co-Instructor<br />
-	    <i>Visvesvaraya Technological University</i>, 2007.<br />	 
-	</p></li>
-	<li><p>Introduction to Databases<br />
-	    Co-Instructor<br />
-	    <i>Visvesvaraya Technological University</i>, 2007.<br />	 
-	</p></li>
-	</ul>
-	</font>
-    </div> <!-- /container -->
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+	      		<div class="container">
+	        		<div class="navbar-header">
+	          			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            				<span class="sr-only">Toggle navigation</span>
+	            				<span class="icon-bar"></span>
+	            				<span class="icon-bar"></span>
+	            				<span class="icon-bar"></span>
+	          			</button>
+	          			<a class="navbar-brand" href="#">Seon Kwon Kim</a>
+	        		</div>
+	        		<div id="navbar" class="navbar-collapse collapse">
+	          			<ul class="nav navbar-nav">
+				            <li><a href="#">Home</a></li>
+				            <li><a href="#news">News</a></li>	    
+				            <li><a href="#research">Research</a></li>
+					    <li><a href="#students">Advising</a></li>
+				            <li><a href="#teaching">Teaching</a></li>
+	          			</ul>
+	        		</div>
+	      		</div>
+	    	</nav>
+	    	<div class="container theme-showcase" role="main">
+	      		<div class="row">
+				<div class="col-md-3">
+				  	<h3>Seon Kwon Kim</h3>
+				  	<img class="img-thumbnail" src="images/Seon Kwon Kim.jpg" alt="" style="width:70%"/>
+				  	<br /><br />
+				  	<h4>Contact</h4>
+					<font size="3"><a href="mailto:hlakkaraju@hbs.edu" class="icon fa-envelope"></a> hlakkaraju@hbs.edu<br />
+					<font size="3"><a href="mailto:hlakkaraju@seas.harvard.edu" class="icon fa-envelope"></a> hlakkaraju@seas.harvard.edu<br />
+					<br>
+					<a href="https://twitter.com/hima_lakkaraju" class="icon fa-twitter"></a> @hima_lakkaraju<br />
+					<a href="https://github.com/lvhimabindu" class="icon fa-github"></a> lvhimabindu<br />	  </font>
+				</div>
+				<div class="col-md-9">
+			  		<br /><br />
+			  		<h3></h3>
+			  		<font size="3">
+					<!--Intoduce-->
+					<p>I am an <font color="#cc0000">Assistant Professor at Harvard University</font> with appointments in Business School and Department of Computer Science. </p> 
+					<blockquote style=" padding: 10px; background-color: #eeeeee;"><font size="3">
+			         	<p>My research interests lie within the broad area of <font color="#cc0000">trustworthy machine learning</font>. More specifically, my research spans <font color="#cc0000">explainable</font>, <font color="#cc0000">fair</font>,  and <font color="#cc0000">robust</font> ML. I am also very interested in <font color="#cc0000">reinforcement learning</font> and <font color="#cc0000">causal inference</font>.  
+				 	<p>I develop machine learning tools and techniques which enable human decision makers to make better decisions. More specifically, my research addresses the following fundamental questions pertaining to human and algorithmic decision-making:
+					</p>
+					<ol>
+						<li> How to build fair and interpretable models that can aid human decision-making?
+						<li> How to ensure that models and their explanations are robust to adversarial attacks? 
+						<li> How to train and evaluate models in the presence of missing counterfactuals?
+						<li> How to detect and correct underlying biases in human decisions and algorithmic predictions? 
+					</ol>
+					<p>These questions have far-reaching implications in domains involving high-stakes decisions such as criminal justice, health care, public policy, business, and education. 
+					</p>
+					</font>
+					</blockquote>
+				  	<p> I lead the <font color="#cc0000">AI4LIFE</font> research group at Harvard and I recently co-founded the <a href="https://www.trustworthyml.org/">Trustworthy ML Initiative (TrustML)</a> to help lower entry barriers into trustworthy ML and bring together researchers and practitioners working in the field.</p>
+					<p> My current research is being generously supported by <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2008461&HistoricalAwards=false">NSF</a>, <a href="https://research.google/outreach/">Google</a>, <a href="https://datascience.harvard.edu/">Harvard Data Science Initiative</a>, and <a href="https://www.bayer.com/en/">Bayer</a>. Prior to my stint at Harvard, I received my PhD in Computer Science from Stanford University.</p>
+					<p>For more details about me and my research, here is my <a href="./Hima_Lakkaraju_CV.pdf">CV</a> and here is a <a href="./one-pager.pdf">one-pager</a> about my research.</p>
+					<p>
+						<font color="#cc0000">NOTE:</font> I am looking for motivated <font color="#cc0000">undergraduate and graduate students as well as postdocs</font> who are broadly interested in trustworthy machine learning and its applications to health care and criminal justice. 
+							If you are excited about this line of research and would like to work with me, please <a href="javascript:toggle_vis('contact')">read this</a> before contacting me. 
+					</p>		  
+					<div id="contact" style="display:none"> 
+					  	<blockquote style=" padding: 10px; background-color: #EEEEEE;"><font size="3">
+							<p>Thank you for your interest in joining my lab! I am currently recruiting undergraduate, masters, and PhD students as well as postdoctoral fellows. </p>
+							<p>If you are interested in a <i>postdoc</i> position, please send me an email with your CV and a brief description of your research interests. Please use the subject line <font color="#cc0000">"Postdoctoral Fellowship Application"</font> in your email. </p> 
+							<p>If you are a <i>current or admitted undergraduate or masters or PhD student at Harvard</i>, please send me an email with your CV and a brief description of your research interests. Please use the subject line <font color="#cc0000">"Interested in Collaboration (Harvard Student)"</font> in your email.</p>
+					  		If you are <i>not (yet!) a student at Harvard and would like to pursue a PhD under my guidance</i>, <font color="#cc0000">please apply to BOTH the following PhD programs and mention my name in your statements and applications</font>: 
+							<ol>
+								<li> <a href="https://gsas.harvard.edu/programs-of-study/all/business-administration">PhD Program in Technology and Operations Management</a> at Harvard Business School. 
+								</li>
+								<li> <a href="https://www.seas.harvard.edu/computer-science/graduate-programs/how-apply">PhD Program in Computer Science</a> at Harvard SEAS.
+								</li>	  
+							</ol>
+							<p> I have few internship positions available for students who are already doing their PhD in the United States. If this is of interest, please send me an email with your CV and a brief description of your research interests. Please use the subject line <font color="#cc0000">"Internship Position (PhD Student)"</font> in your email.</p> 
+							<p>Unfortunately, I will not be able to respond to any individual emails about admissions to masters or PhD programs.</p>
+						</blockquote>
+			  		</div>	
+			  		</font> 
+				</div>
+				<font size="3">
+			</div>
 
+			<div class="page-header" id="news"><h3>News</h3></div>
+			<div class="row">
+				<div class="col-md-12">
+					<ul>
+						<li> We officially launched the <a href="https://www.trustworthyml.org/">Trustworthy ML Initiative (TrustML)</a> to enable easy access to resources on trustworthy ML and to build a community of researchers and practitioners working on the topic.
+						</li>
+						<li> I will be presenting a tutorial on <a href="https://medium.com/@NeurIPSConf/tutorial-selections-for-neruips-2020-33b79f4915c4">Explaining Machine Learning Predictions: State-of-the-art, Challenges, and Opportunities</a> at <a href="https://nips.cc/">NeurIPS 2020</a>.
+						</li>
+						<li> I am teaching a graduate course on <a href="https://www.hbs.edu/faculty/units/tom/Pages/curriculum.aspx">Technology and Operations Management</a> during fall 2020. 
+						<li>I <font color="#cc0000">taught a graduate course</font> on <a href="https://interpretable-ml-class.github.io/">Interpretable Machine Learning</a> during fall 2019. 
+						</li>
+						<li>I <font color="#cc0000">taught a graduate course</font> on <a href="https://hbs.instructure.com/courses/6256">Introduction to Machine Learning for Social Scientists</a> during spring 2020. </li>
+						<li>Excited to be named one of the <font color="#cc0000">innovators to watch</font> by <a href="https://www.vanityfair.com/">Vanity Fair</a>. <a href="https://www.vanityfair.com/news/2019/10/future-innovators-index-2019">Here</a> is the article.
+						<li> Incredibly honored and humbled to be named one of the <font color="#cc0000">35 innovators under 35</font> by <a href="https://www.technologyreview.com/lists/innovators-under-35/2019/">MIT Tech Review</a>. <a href="https://www.technologyreview.com/lists/innovators-under-35/2019/humanitarian/himabindu-lakkaraju/">Here</a> is the article featuring my work.   
+						</li>
+						<li>
+						Organizing a session on <heavy>Trustworthy Machine Learning</heavy> at <a href="http://meetings2.informs.org/wordpress/nationalharbor2020/">INFORMS Annual Meeting</a> 2020.
+						</li>
+						<li>
+						Serving as an Area Chair for <a href="https://icml.cc/Conferences/2020">ICML</a> and <a href="https://nips.cc/Conferences/2020/">NeurIPS</a> 2020
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="page-header" id="news"><h3>Upcoming and Recent Talks</h3></div>
+			<div class="row">
+				<div class="col-md-12">
+					<ul>
+						<li> 
+							<date>02.2021</date> <a href="https://www.cl.cam.ac.uk/research/ai/meetings/">University of Cambridge</a> 
+						</li>
+						<li> 
+							<date>02.2021</date> <a href="https://groups.cs.umass.edu/voicesofds/">Voices of Data Science, UMass Amherst</a> 
+						</li>
+						<li> 
+							<date>01.2021</date> <a href="https://www.cis.mpg.de/events/">Max Planck Symposium on Computing and Society</a> 
+						</li>
+						<li>
+							<date>12.2020</date> <a href="https://www.cs.cmu.edu/~nihars/teaching/10715-Fa20/index.html">Advanced Machine Learning</a> and <a href="https://haiicmu.github.io/calendar/">Human-AI Interaction</a> Courses at Carnegie Mellon University 	  
+						</li>
+						<li>  <!-- INFORMS -->
+							<date>11.2020.</date>
+							3 Invited talks at <a href="https://www.abstractsonline.com/pp8/#!/9022/sessions/lakkaraju/1/">INFORMS</a>
+						</li>
+						<li>
+							<date>10.2020.</date>
+							Invited talk at the <a href="https://innovate.mygov.in/vaibhav-summit/">Vaibhav Summit</a> being organized by the Government of India
+						</li>
+						<li>  <!-- MICCAI -->
+							<date>10.2020.</date>
+							Keynote at <a href="https://imimic-workshop.com/">MICCAI Workshop on Interpretability of Machine Intelligence</a>
+						</li>
+					</ul>
+				</div>	
+			</div>
+			</font>
+			<div class="page-header" id="research"><h3>Research</h3></div>
+			<h4>Publications</h4>    
+			<font size="3">
+				<ul>
+					<li> 
+						<p> Fair influence maximization: A welfare optimization approach. <br />
+						      Aida Rahmattalabi, Shahin Jabbari, Himabindu Lakkaraju, Phebe Vayanos, Eric Rice, Milind Tambe <br />
+						      <i></i> AAAI International Conference on Artificial Intelligence (AAAI), 2021.<br />
+						      <a href="https://arxiv.org/pdf/2006.07906.pdf">pdf</a>
+						</p>
+					</li>
+					<li>
+						<p> Interactive Summaries of Actionable Recourses: Uncovering Biases and Disparities in Recourse <br />
+						Kaivalya Rawal and Himabindu Lakkaraju. <br />
+						<i></i>Advances in Neural Information Processing Systems (NeurIPS), 2020.<br />
+						<a href="https://arxiv.org/abs/2009.07165" class="btn btn-xs btn-default">pdf</a>
+						</p>
+					</li>
+					<li>
+						<p> Incorporating Interpretable Output Constraints in Bayesian Neural Networks <br />
+						Wanqian Yang, Lars Lorch, Moritz Gaule, Himabindu Lakkaraju, Finale Doshi-Velez. <br />
+						<i></i>Advances in Neural Information Processing Systems (NeurIPS), 2020.<br />
+						<a href="https://arxiv.org/pdf/2010.10969.pdf" class="btn btn-xs btn-default">pdf</a>
+						</p>
+					</li>
+					<li>
+						<p> Robust and Stable Black Box Explanations. <br />
+						Himabindu Lakkaraju, Nino Arsov, Osbert Bastani. <br />
+						<i></i>International Conference on Machine Learning (ICML), 2020.<br />
+						<a href="https://proceedings.icml.cc/static/paper_files/icml/2020/5945-Paper.pdf" class="btn btn-xs btn-default">pdf</a>
+						</p>
+					</li>		
+				</ul>
+			</font>
 
-    <!-- Bootstrap core JavaScript
-	 ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/docs.min.js"></script>
-      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-      <script src="js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+			<h4>Patents</h4>
+		      	<font size="3">
+				<ul>
+				<li>
+					<p>Extraction and Grouping of Feature Words.<br />
+					Himabindu Lakkaraju, Chiranjib Bhattacharyya, Sunil Aravindam, Kaushik Nath.<br />
+					US8484228<br />
+					</p>
+				</li>
+				<li>
+					<p>Enhancing knowledge bases using rich social media.<br />
+					Jitendra Ajmera, Shantanu Ravindra Godbole, Himabindu Lakkaraju, Bernard Andrew Roden, Ashish Verma. <br />
+					US20130224714<br />
+					</p>
+				</li>
+				</ul>	 
+			</font>
+		
+			<div class="page-header" id="students"><h3>Advising</h3></div>
+			<p>I am very fortunate to be collaborating with the following students:</p>
+			<ul>
+				<li>Shahin Jabbari (Postdoc, Harvard CS)</li>
+				<li>Sophie Hilgard (PhD Student, Harvard CS) </li>
+				<li>Dylan Slack (PhD Student, UCI CS) </li>
+				<li>Julius Adebayo (PhD Student, MIT EECS) </li>
+				<li>Aida Rahmttalabi (PhD Student, USC CS) </li>
+				<li>Nino Arsov (Researcher, Macedonian Academy of Arts and Sciences) </li>
+				<li>Aditya Karan (Masters Student, Harvard CS)</li>
+				<li>Kaivalya Rawal (Masters Student, Harvard Data Science)</li>
+				<li>Jorma Gorns (Masters Student, Harvard CS)</li>
+				<li>Emily Jia (Undergraduate, Harvard CS)</li>
+				<li>Alexis Ross (Undergraduate, Harvard CS + Philosophy)</li>
+				<li>Wanqian Yang (Undergraduate, Harvard CS)</li>
+				
+			</ul>
+
+    			<div class="page-header" id="teaching"><h3>Teaching</h3></div>
+		     	<font size="3">
+			     
+		      		<ul>
+					<li><p> <a href="https://hbs.instructure.com/courses/7791">Introduction to Technology and Operations Management</a><br/>
+					Instructor <br />
+					<i>Harvard University</i>, 2020.<br />
+					</p></li>
+					<li><p> <a href="https://hbs.instructure.com/courses/6256">Introduction to Machine Learning for Social Scientists</a><br/>
+					Instructor <br />
+					<i>Harvard University</i>, 2020.<br />
+					</p></li>
+					<li><p> <a href="https://canvas.harvard.edu/courses/68154">Topics in Machine Learning: Interpretability and Explainability</a><br/>
+					Instructor <br />
+					<i>Harvard University</i>, 2019.<br />
+					</p></li>
+				</ul>
+			</font>
+		</div> 
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+	</body>
 </html>
