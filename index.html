@@ -53,6 +53,44 @@
 			e.style.display = 'none';
 		}
 		</script>
+		<style>
+		.collapsible {
+			background-color: #777;
+			color: white;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+		}
+		
+		.active, .collapsible:hover {
+		  	background-color: #555;
+		}
+		
+		.collapsible:after {
+			content: '\002B';
+			color: white;
+			font-weight: bold;
+			float: right;
+			margin-left: 5px;
+		}
+		
+		.active:after {
+		  	content: "\2212";
+		}
+		
+		.content {
+			padding: 0 18px;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.2s ease-out;
+			background-color: #f1f1f1;
+		}
+		</style>
+		
 	</head>
 
 	<body>
@@ -113,54 +151,50 @@
 				<h3>Project Experience</h3>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-12">				
 					<font size="3">
-						<ul>
-							<li> 
-								<date>08.2021</date> - <date>02.2023</date>
-								Development of Source Code Obfuscatioin and Decryption Technology 
-							</li>
-							<li> 
+						<button class="collapsible">
+							<date>08.2021</date> - <date>02.2023</date> 
+							Development of Source Code Obfuscatioin and Decryption Technology 
+						</button>
+						<div class="content">
+  							<p>
+								luke.
+							</p>
+						</div>
+								
+						<!--					
 								<date>03.2021</date> - <date>01.2023</date>
 								Development of Security Service Technology using Side-channel Information
-							</li>
-							<li> 
+					
 								<date>03.2021</date> - <date>12.2022</date>
-								<font size="2.7">Development of Technology for The Security and Ultra-high-speed Integrity of The Next-generation Internal Network of Autonomous Vehicles</font>
-							</li>
-							<li> 
+								Development of Technology for The Security & Ultra-high-speed Integrity of The Next-generation Internal Network of Autonomous Vehicles
+							
 								<date>03.2021</date> - <date>08.2021</date>
 								KU-Smart Mask Project
-							</li>
-							<li> 
+							
 								<date>01.2020</date> - <date>06.2020</date>
 								A Grocery Purchasing System Using RFID Technology for Blind People
-							</li>
-							<li> 
+							
 								<date>02.2019</date> - <date>12.2019</date>
 								Industry and Academy Research Cooperation Project: A dynamic web solution based on GUI
-							</li>
-							<li> 
+							
 								<date>02.2019</date> - <date>12.2019</date>
 								Industry and Academy Capstone Design Project: A enterprise web solution
-							</li>
-							<li> 
+							
 								<date>08.2018</date> - <date>12.2018</date>
 								FPGA Design Project: A shooting game with various I/O devices
-							</li>
-							<li> 
+							
 								<date>08.2017</date> - <date>12.2017</date>
 								Arduino Design Project: A device to show on a screen display about seats in a library
-							</li>
-							<li> 
+							
 								<date>07.2017</date> - <date>08.2017</date>
 								Business Design Project for an IT Start-up in China
-							</li>
-							<li> 
+							
 								<date>07.2017</date> - <date>09.2017</date>
 								Product Design Project: A bus application Using Voice Recognition Technology for Blind People
 							</li>
-							<!--<li>  
+							<li>  
 								<date>10.2020.</date>
 								Keynote at 
 								<a href="https://imimic-workshop.com/">MICCAI Workshop on Interpretability of Machine Intelligence</a>
@@ -169,6 +203,23 @@
 					</font>
 				</div>
 			</div>
+						
+			<script>
+				var coll = document.getElementsByClassName("collapsible");
+				var i;
+				for (i = 0; i < coll.length; i++) {
+					coll[i].addEventListener("click", function() {
+						this.classList.toggle("active");
+						var content = this.nextElementSibling;
+						if (content.style.maxHeight){
+							content.style.maxHeight = null;
+						} else {
+							content.style.maxHeight = content.scrollHeight + "px";
+					} 
+					});
+				}
+			</script>
+
 			<div class="page-header">
 				<h3>Work Experience</h3>
 			</div>
@@ -243,7 +294,7 @@
 							A Study on Polynomial Mixed Boolean-Arithmetic expression generation method<br />
 						 	Jiwon Lee, Hongjoo Jin, Seon Kwon Kim, Dong Hoon Lee<br />
 							<i></i>Korea institute of military science and technology Conference, 2022.<br />
-							<a href="./research/KIMST22Lee" class="btn btn-xs btn-default">pdf</a>
+							<a href="./research/KIMST22Lee.pdf" class="btn btn-xs btn-default">pdf</a>
 						</p>
 					</li>
 					<li>
@@ -251,7 +302,7 @@
 							A New Dynamic Control Flow Obfuscation Using Dummy Condition<br />
 						 	Jiwon Lee, Hongjoo Jin, Seon Kwon Kim, Kijoong Kim, Dong Hoon Lee<br />
 							<i></i>Conference on Information Security and Cryptography Summer, 2022.<br />
-							<a href="./research/CISC22Lee" class="btn btn-xs btn-default">pdf</a>
+							<a href="./research/CISC22Lee.pdf" class="btn btn-xs btn-default">pdf</a>
 						</p>
 					</li>
 					<li>
@@ -259,7 +310,7 @@
 							Design and Implementation of A Control-flow Attack Detection Method Using System Side Channel Information<br />
 						 	Seon Kwon Kim, Hongjoo Jin, Jiwon Lee, Dong Hoon Lee<br />
 							<i></i>Conference on Information Security and Cryptography Summer, 2021.<br />
-							<a href="./research/CISC21Kim" class="btn btn-xs btn-default">pdf</a>
+							<a href="./research/CISC21Kim.pdf" class="btn btn-xs btn-default">pdf</a>
 						</p>
 					</li>					
 					<li>
@@ -267,7 +318,7 @@
 							Design and Implementation of Exception Handler Dedicated to Backward-edge Control-flow Integrity for Security and Compatibility<br />
 						 	Seon Kwon Kim, Hongjoo Jin, Jiwon Lee, Dong Hoon Lee<br />
 							<i></i>Conference on Information Security and Cryptography Summer, 2021.<br />
-							<a href="./research/CISC21Jin" class="btn btn-xs btn-default">pdf</a>
+							<a href="./research/CISC21Jin.pdf" class="btn btn-xs btn-default">pdf</a>
 						</p>
 					</li>										
 				</ul>
