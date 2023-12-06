@@ -115,7 +115,17 @@
 			  .column  {
 			    width: 100%;
 			  }
-			}			
+			}	
+			<style>
+			.col-container {
+			  display: table;
+			  width: 100%;
+			}
+			.col {
+			  display: table-cell;
+			  padding: 16px;
+			}
+			</style>			
 		</style>
 		
 	</head>
@@ -185,7 +195,28 @@
 							Development of Source Code Obfuscatioin and Decryption Technology 
 						</button>
 						<div class="content">
-							<div class="row">
+							<div class="col-container">
+							  <div class="col" style="background:orange">
+							    <h2>Column 1</h2>
+							    <p>Hello World</p>
+							  </div>
+							
+							  <div class="col" style="background:yellow">
+							    <h2>Column 2</h2>
+							    <p>Hello World!</p>
+							    <p>Hello World!</p>
+							    <p>Hello World!</p>
+							    <p>Hello World!</p>
+							  </div>
+							
+							  <div class="col" style="background:orange">
+							    <h2>Column 3</h2>
+							    <p>Some other text..</p>
+							    <p>Some other text..</p>
+							  </div>
+							</div>
+							
+<!-- 							<div class="row">
 								<div class="column" style="padding-left: 77px;">
 									<p>
 										This project was commissioned by the Agency for Defense Development. 
@@ -207,7 +238,7 @@
 								</div>
 								<div class="column">
 									<img class="img-thumbnail" src="image/prj1-1.png" alt="" style="width:100%"/>
-								</div>
+								</div> -->
 							</div>  							
 						</div>
 						<button class="collapsible">
