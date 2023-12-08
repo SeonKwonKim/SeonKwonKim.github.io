@@ -501,12 +501,21 @@
 						</p>
 					</li>
 					<li>
-						<p>
+						<button class="collapsible">
 							Master's thesis<br />
 						 	Seon Kwon Kim, Dong Hoon Lee<br />
 							Graduate School of Korea University, 2023.<br />
 							<a href="https://dcollection.korea.ac.kr/public_resource/pdf/000000270269_20231206100756.pdf" class="btn btn-xs btn-default">pdf</a>
-						</p>
+						</button>
+						<div class="content">
+							Abstract: As modern return-oriented programming (ROP) attacks have become more sophisticated, preventing or detecting these attacks is essential for real-world exploit defense. 
+							As an alternative to many defense techniques of ROP attacks that require software modification and hardware assistance, researchers have proposed ROP defense techniques using hardware performance counters (HPCs) to mitigate concerns about additional cost and compatibility issues. 
+							However the existing HPC data-based ROP detection techniques typically suffer from low detection performance mainly because of the non-deterministic nature of HPCs.
+							To address these issues, we propose DROPSYS, an enhanced Detection of ROP attacks using SYStem information. Differing from the existing techniques, DROPSYS harnesses not only HPC data, but also system utilization data to mitigate the non-deterministic nature of HPCs and overcome the limited number of available HPCs. 
+							For anomaly detection model, a long short-term memory-based variational autoencoder is used to effectively analyze the multi-dimensional time-series data from HPCs and system utilization data. 
+							DROPSYS also performs feature selection for low computational overhead while maintaining the attack detection performance. Evaluation results show that DROPSYS effectively captures the behaviors and effects of ROP attacks and can detect the attacks with a 0.046% false positive rate. 
+							The accuracy of DROPSYS is 92.7%, and its f1 score is 92.1%—a figure much higher than those of existing techniques that utilize only HPC data.
+						</div>
 					</li>
 					<li>
 						<p>
